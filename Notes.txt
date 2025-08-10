@@ -1,4 +1,4 @@
-\*\*\*\*\*\*Create a repository to github\*\*\*\*\*\*\*\*\*
+**************Create a repository to GitHub**********************
 
 
 
