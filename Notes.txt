@@ -58,3 +58,39 @@ Step 4: git commit -m "Your message"
 Step 5: git push
 	( last me hame ye command run karani hai. github par changes ho gaye hai. )
 
+
+**********************How to ignore folder or files when uploading in github**********************
+
+maine ek new folder create kiya **iNeuron** naam ka (local system par).
+iNeuron folder ke andar 2 aur folders the. Assignment aur Assignment program
+
+muze iNeuron ko repository banana tha aur Assignment program folder ko upload karna tha par Assignment folder ko ignore karna tha. 
+
+Step 1: iNeuron folder ke andar .gitignore.txt naam ki file create karni hogi
+
+Step 2: us txt file me **Assignment/** ye line likhani hai aur save karna hai.
+	( jis bhi folder ko ignore karna hi us folder ka naam likhake / backslash dena hai )
+
+Step 3: hame iNeuron ko as a repository treat karna hai to **Move folder on local system then how to save changes on GitHub** ye topic me jitane bhi steps hai wo follow karna hai
+
+Step 4: iNeuron ki repository website par dikhayi degi. par hamara folder bhi dikayi dega  jisako hame ignore karna tha
+
+Step 5: Apne Git Bash mein iNeuron repository folder mein jao.
+
+Step 6: Git ki mv (move) command ka use karke file ka naam rename ho jayega.
+	( git mv ".gitignore.txt" ".gitignore" )
+
+Step 7: Changes ko commit karo: git commit -m "Renamed gitignore.txt to .gitignore"
+
+Step 8: GitHub par push karo: git push 
+	(step 6, 7, 8 complete karne ke baad git ko ye pata chal gaya hai ki konsa folder ignore karna tha)
+
+Step 9: Apne iNeuron repository folder mein jao. aur Folder ko Git se hatao.
+	(git rm -r --cached Assignment)
+		git rm command Git se files ya folders hatane ke liye use hoti hai.
+		-r (recursive) ka matlab hai ki folder aur uske andar ki saari files hata do.
+		--cached ka matlab hai ki sirf Git se hatao, tumhare computer se nahi.
+
+Step 10: Is change ko commit karo: git commit -m "Removed Assignment folder from repository"
+
+Step 11: git push
