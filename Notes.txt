@@ -94,3 +94,5 @@ Step 9: Apne iNeuron repository folder mein jao. aur Folder ko Git se hatao.
 Step 10: Is change ko commit karo: git commit -m "Removed Assignment folder from repository"
 
 Step 11: git push
+
+(note: .gitignore file ko delete nahi karna kyuki  kyunki yeh file hi Git ko batati hai ki use Assignment folder ko ignore karna hai. Agar tum is file ko delete kar doge, to agli baar jab tum **git add .** karoge, to Git phir se Assignment folder ko ek naya folder samajh kar track karne ki koshish karega.)
