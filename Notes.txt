@@ -40,3 +40,21 @@ Step 4: git push
 	( last me hame ye command run karani hai. github par changes ho gaye hai. )
  
 
+**********************Move folder on local system then how to save changes on GitHub**********************
+
+Step 1: tumhara ek folder hai jisme tumne **.git** install kiya hai (git init command se) aur us folder ko tumhe move karna hai to
+	sabse pahale local system par folder ko cut kro aur jaha par tumhe paste karna hai waha par pase karo.
+	
+	Example : maine Git Notes is folder me .git ko install kiya tha. to maine Git Notes ye folder GitHub (local system par create kiya hai) folder me move kar diya.
+	
+Step2 : git status
+	( tumhe **git status** ye command run karni hai. agar changes huye hai ye dikh raha hai to step 3 par jana hai . agar  **Your branch is up to date with 'origin/main'.** ye dikha raha hai to sab kuchh sahi hai kuchh karne ki jaroorat nahi hai. ) 
+
+Step 2: git add .
+
+Step 4: git commit -m "Your message"
+	(git add ke baad git commit karana compulsory hai)
+
+Step 5: git push
+	( last me hame ye command run karani hai. github par changes ho gaye hai. )
+
