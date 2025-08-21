@@ -5,58 +5,62 @@ Step 1: Create a folder on local system.
 Step 2: Open Git Bash.
 
 Step 3: Open GitHub Website and create repository in website.
-	When creating repository in website name should be same as per local system. 
-	(local system par jo folder name hai same name website ke repo par hona chahiye)
+ 	When creating repository in website name should be same as per local system.
+ 	(local system par jo folder name hai same name website ke repo par hona chahiye)
 
 
 
-Step 4: Copy https link from GitHub. Link is in newly created repository or GitHub will provided.
-	(http link may different as per repository. in my case this link is generated.)
+Step 4: Copy https link from GitHub. 
+	Link is looks like this - > https://github.com/yashramteke/Git-Notes.git  	(http link may different as per repository. in my case this link is generated.)
 
-Step 5: In Git Bash run this command and paste https link 
-	Example:
-	git remote add origin https://github.com/yashramteke/Git-Notes.git
-	< -this is command- > < -----------this is https link----------- >
+Step 5: in Git Bash, go to your repository location in local system and run this command
+	git init
+	
 
-Step 6: After that run this command
-	git branch -M main
-	(when you execute step 5, your default branch name is **master**. When you execute step 6 your branch name will change to **main.** this is compulsory )
+Step 6: In Git Bash run this command and paste https link
+ 	Example:
+ 	git remote add origin https://github.com/yashramteke/Git-Notes.git
+ 	< -this is command- > < -----------this is https link----------- >
+
+Step 7: After that run this command
+ 	git branch -M main
+ 	(when you execute step 5, your default branch name is **master**. When you execute step 7 your branch name will change to **main.** this is compulsory )
 
 
 **********************Save changes to GitHub repository**********************
 
 Step 1: git status
-	( agar local me kuchh badlav kiye hai to origin par save nahi hote. to local par kitane badlav huye hai ye dekhane ke liye command hai) 
+ 	( agar local me kuchh badlav kiye hai to origin par save nahi hote. to local par kitane badlav huye hai ye dekhane ke liye command hai)
 
 Step 2: git add
-	( ye command se hamare changes staging mode me aate hai. git status (step 1) ke baad **git add** execute karna hai. agar git status execute ke baad bohot 	sare changes dikh rahe hai to **git add .** ye command bhi run kar sakte ho isase eksathh sare changes staging mode me aate hai aur agar ek ek karke karna 	hai to **git add** aur is command ke samane file name likhna hoga with extention )
-	
-	Example : git add Notes.txt
+ 	( ye command se hamare changes staging mode me aate hai. git status (step 1) ke baad **git add** execute karna hai. agar git status execute ke baad bohot 	sare changes dikh rahe hai to **git add .** ye command bhi run kar sakte ho isase eksathh sare changes staging mode me aate hai aur agar ek ek karke karna 	hai to **git add** aur is command ke samane file name likhna hoga with extention )
+ 
+ 	Example : git add Notes.txt
 
 Step 3: git commit -m "Your message"
-	(git add ke baad git commit karana compulsory hai)
+ 	(git add ke baad git commit karana compulsory hai)
 
 Step 4: git push
-	( last me hame ye command run karani hai. github par changes ho gaye hai. )
- 
+ 	( last me hame ye command run karani hai. github par changes ho gaye hai. )
+ 
 
 **********************Move folder on local system then how to save changes on GitHub**********************
 
 Step 1: tumhara ek folder hai jisme tumne **.git** install kiya hai (git init command se) aur us folder ko tumhe move karna hai to
-	sabse pahale local system par folder ko cut kro aur jaha par tumhe paste karna hai waha par pase karo.
-	
-	Example : maine Git Notes is folder me .git ko install kiya tha. to maine Git Notes ye folder GitHub (local system par create kiya hai) folder me move kar diya.
-	
+ 	sabse pahale local system par folder ko cut kro aur jaha par tumhe paste karna hai waha par pase karo.
+ 
+ 	Example : maine Git Notes is folder me .git ko install kiya tha. to maine Git Notes ye folder GitHub (local system par create kiya hai) folder me move kar diya.
+ 
 Step2 : git status
-	( tumhe **git status** ye command run karni hai. agar changes huye hai ye dikh raha hai to step 3 par jana hai . agar  **Your branch is up to date with 'origin/main'.** ye dikha raha hai to sab kuchh sahi hai kuchh karne ki jaroorat nahi hai. ) 
+ 	( tumhe **git status** ye command run karni hai. agar changes huye hai ye dikh raha hai to step 3 par jana hai . agar  **Your branch is up to date with 'origin/main'.** ye dikha raha hai to sab kuchh sahi hai kuchh karne ki jaroorat nahi hai. )
 
 Step 2: git add .
 
 Step 4: git commit -m "Your message"
-	(git add ke baad git commit karana compulsory hai)
+ 	(git add ke baad git commit karana compulsory hai)
 
 Step 5: git push
-	( last me hame ye command run karani hai. github par changes ho gaye hai. )
+ 	( last me hame ye command run karani hai. github par changes ho gaye hai. )
 
 
 **********************How to ignore folder or files when uploading in github**********************
@@ -64,12 +68,12 @@ Step 5: git push
 maine ek new folder create kiya **iNeuron** naam ka (local system par).
 iNeuron folder ke andar 2 aur folders the. Assignment aur Assignment program
 
-muze iNeuron ko repository banana tha aur Assignment program folder ko upload karna tha par Assignment folder ko ignore karna tha. 
+muze iNeuron ko repository banana tha aur Assignment program folder ko upload karna tha par Assignment folder ko ignore karna tha.
 
 Step 1: iNeuron folder ke andar .gitignore.txt naam ki file create karni hogi
 
 Step 2: us txt file me **Assignment/** ye line likhani hai aur save karna hai.
-	( jis bhi folder ko ignore karna hi us folder ka naam likhake / backslash dena hai )
+ 	( jis bhi folder ko ignore karna hi us folder ka naam likhake / backslash dena hai )
 
 Step 3: hame iNeuron ko as a repository treat karna hai to **Move folder on local system then how to save changes on GitHub** ye topic me jitane bhi steps hai wo follow karna hai
 
@@ -78,18 +82,18 @@ Step 4: iNeuron ki repository website par dikhayi degi. par hamara folder bhi di
 Step 5: Apne Git Bash mein iNeuron repository folder mein jao.
 
 Step 6: Git ki mv (move) command ka use karke file ka naam rename ho jayega.
-	( git mv ".gitignore.txt" ".gitignore" )
+ 	( git mv ".gitignore.txt" ".gitignore" )
 
 Step 7: Changes ko commit karo: git commit -m "Renamed gitignore.txt to .gitignore"
 
-Step 8: GitHub par push karo: git push 
-	(step 6, 7, 8 complete karne ke baad git ko ye pata chal gaya hai ki konsa folder ignore karna tha)
+Step 8: GitHub par push karo: git push
+ 	(step 6, 7, 8 complete karne ke baad git ko ye pata chal gaya hai ki konsa folder ignore karna tha)
 
 Step 9: Apne iNeuron repository folder mein jao. aur Folder ko Git se hatao.
-	(git rm -r --cached Assignment)
-		git rm command Git se files ya folders hatane ke liye use hoti hai.
-		-r (recursive) ka matlab hai ki folder aur uske andar ki saari files hata do.
-		--cached ka matlab hai ki sirf Git se hatao, tumhare computer se nahi.
+ 	(git rm -r --cached Assignment)
+ 		git rm command Git se files ya folders hatane ke liye use hoti hai.
+ 		-r (recursive) ka matlab hai ki folder aur uske andar ki saari files hata do.
+ 		--cached ka matlab hai ki sirf Git se hatao, tumhare computer se nahi.
 
 Step 10: Is change ko commit karo: git commit -m "Removed Assignment folder from repository"
 
